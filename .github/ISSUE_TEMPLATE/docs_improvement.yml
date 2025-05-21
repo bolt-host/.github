@@ -1,0 +1,31 @@
+name: 📝 Documentation Improvement
+description: Suggest changes or additions to Bolt's documentation.
+title: "[DOCS] "
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve Bolt’s documentation! Whether it’s unclear instructions, missing guides, or typos, we appreciate your help.
+
+  - type: input
+    id: doc-location
+    attributes:
+      label: Documentation Page or File
+      placeholder: e.g. bolt-docs/docs/getting-started.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement-description
+    attributes:
+      label: What Needs to Improve?
+      placeholder: Describe what should be updated, fixed, or added.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Your Suggested Fix (optional)
+      placeholder: Feel free to paste updated text, links, or examples here.
