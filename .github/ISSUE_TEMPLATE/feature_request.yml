@@ -1,0 +1,38 @@
+name: 🌟 Feature Request
+description: Suggest an enhancement for Bolt.
+title: "[FEATURE] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Bolt! Tell us what you’d like to see.
+
+  - type: textarea
+    id: describe-feature
+    attributes:
+      label: Feature Description
+      description: What do you want Bolt to do differently or better?
+      placeholder: A clear and concise description of the new feature or improvement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Why is this feature useful? What problem does it solve?
+      placeholder: e.g. I need to run multiple sandboxes with shared configs for CI testing.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any other approaches or workarounds?
+      placeholder: e.g. I tried using Docker-in-Docker, but it lacks native sandboxing.
+
+  - type: input
+    id: related-areas
+    attributes:
+      label: Affected Area (if known)
+      placeholder: e.g. sandboxes, CLI
