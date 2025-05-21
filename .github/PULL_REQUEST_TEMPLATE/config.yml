@@ -1,0 +1,12 @@
+pull_request_templates:
+  - name: ✨ Feature PR
+    description: Add a new capability to Bolt
+    file: feature_request.md
+
+  - name: 🐞 Bug Fix PR
+    description: Fix an issue or crash in the system
+    file: bug_fix.md
+
+  - name: 📝 Documentation PR
+    description: Make changes to the documentation only
+    file: docs_only.md
