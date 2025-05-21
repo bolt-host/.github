@@ -1,0 +1,60 @@
+name: 🐞 Bug Report
+description: Report an issue with the software or its behavior.
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the information below so we can help resolve the issue quickly.
+
+  - type: textarea
+    id: describe-bug
+    attributes:
+      label: Description
+      description: Describe the bug and what you expected to happen.
+      placeholder: A clear and concise description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1. Start the sandbox
+        2. Deploy X service
+        3. Observe crash
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Output
+      description: Paste any relevant logs or error output.
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: Bolt Version
+      placeholder: e.g. v0.4.2
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: e.g. Ubuntu 22.04, Windows 11, macOS Ventura
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Checks
+      options:
+        - label: I have checked for existing issues related to this bug.
+          required: true
+        - label: I have attached logs or screenshots where relevant.
