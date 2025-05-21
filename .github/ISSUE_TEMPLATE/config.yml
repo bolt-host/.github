@@ -1,0 +1,21 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a Question or Get Help
+    url: https://github.com/bolt-host/.github/discussions
+    about: Use GitHub Discussions for questions, troubleshooting, or general chat.
+
+issue_templates:
+  - name: 🐞 Bug Report
+    description: Report a reproducible bug or crash in any part of the Bolt platform.
+    labels: [bug]
+    file: bug_report.yml
+
+  - name: 🌟 Feature Request
+    description: Suggest an idea or improvement for Bolt.
+    labels: [enhancement]
+    file: feature_request.yml
+
+  - name: 📝 Documentation Improvement
+    description: Report outdated docs, unclear instructions, or missing content.
+    labels: [documentation]
+    file: docs_improvement.yml
